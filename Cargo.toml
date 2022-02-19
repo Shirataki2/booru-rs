@@ -1,0 +1,23 @@
+[package]
+name = "booru-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.54"
+async-trait = "0.1.52"
+dirs = "4.0.0"
+dotenv = "0.15.0"
+env_logger = "0.9.0"
+log = "0.4.14"
+reqwest = { version = "0.11.9", features = ["gzip", "json"] }
+serde = { version = "1.0.136", features = ["derive"] }
+serde_json = "1.0.79"
+test-log = "0.2.8"
+thiserror = "1.0.30"
+tokio = { version = "1.17.0", features = ["full"] }
+toml = "0.5.8"
+
+[features]
